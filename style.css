@@ -1,0 +1,162 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  background:#0a0e1a;
+  color:#a0a8b8;
+  scroll-behavior:smooth;
+}
+
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 50px;
+  background:#0d1320;
+  position:fixed;
+  width:100%;
+  top:0;
+}
+
+nav a{
+  color:#f3f3f3;
+  text-decoration:none;
+  margin-left:20px;
+  transition:.3s;
+}
+
+nav a:hover{
+  color:#3b82f6;
+}
+
+.hero{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.hero img{
+  width:200px;
+  height:200px;
+  border-radius:50%;
+  border:5px solid #3b82f6;
+  margin-bottom:20px;
+  object-fit:cover;
+}
+
+.hero h1{
+  font-size:50px;
+  margin-bottom:10px;
+  color:#ffffff;
+}
+
+.hero h1 span{
+  color:#3b82f6; /* use this on "Name" / highlighted word */
+}
+
+.hero p{
+  font-size:22px;
+  margin-bottom:20px;
+  color:#a0a8b8;
+}
+
+button{
+  padding:12px 25px;
+  border:none;
+  background:#3b82f6;
+  color:#ffffff;
+  cursor:pointer;
+  font-size:18px;
+  border-radius:5px;
+}
+
+button:hover{
+  background:#2563eb;
+}
+
+.section{
+  padding:100px 50px;
+  text-align:center;
+}
+
+.section h2{
+  font-size:40px;
+  margin-bottom:30px;
+  color:#ffffff;
+}
+
+.cards{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:20px;
+}
+
+.card{
+  background:#141a2b;
+  padding:30px;
+  width:250px;
+  border-radius:10px;
+  transition:.4s;
+  color:#ffffff;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+  background:#3b82f6;
+}
+
+.box{
+  background:#141a2b;
+  padding:30px;
+  width:350px;
+  margin:auto;
+  border-radius:10px;
+}
+
+.gallery{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:20px;
+}
+
+.gallery img{
+  width:300px;
+  border-radius:10px;
+  transition:.3s;
+}
+
+.gallery img:hover{
+  transform:scale(1.05);
+}
+
+footer{
+  padding:30px;
+  background:#0d1320;
+  text-align:center;
+  color:#a0a8b8;
+}
+
+@media(max-width:768px){
+  header{
+    flex-direction:column;
+  }
+  nav{
+    margin-top:10px;
+  }
+  .hero h1{
+    font-size:35px;
+  }
+  .cards{
+    flex-direction:column;
+    align-items:center;
+  }
+}
